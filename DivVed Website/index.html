@@ -1,0 +1,1187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Div Ved Home Solutions | Havells Galaxy | Vijaypur</title>
+
+  <meta name="description" content="Discover Havells home solutions at Div Ved Home Solutions, Vijaypur, Samba, Jammu and Kashmir. Explore fans, BLDC fans, wires, switches, lighting, water heaters and more. Contact us on WhatsApp.">
+
+  <meta name="theme-color" content="#10291f">
+
+  <style>
+    :root {
+      --green: #10291f;
+      --green-light: #1b3b2d;
+      --gold: #d8b875;
+      --cream: #f7f5ef;
+      --white: #ffffff;
+      --text: #252923;
+      --muted: #696e66;
+      --border: #e8e5dc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 85px;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .container {
+      width: min(1120px, 90%);
+      margin: auto;
+    }
+
+    /* Navigation */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(16, 41, 31, 0.97);
+      color: var(--white);
+      border-bottom: 1px solid rgba(216, 184, 117, 0.3);
+      backdrop-filter: blur(12px);
+    }
+
+    .navbar {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      font-size: 19px;
+      font-weight: 800;
+      letter-spacing: 1.4px;
+      line-height: 1.25;
+    }
+
+    .brand span {
+      display: block;
+      margin-top: 5px;
+      color: var(--gold);
+      font-size: 10px;
+      letter-spacing: 3px;
+      font-weight: 600;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 23px;
+      font-size: 13px;
+    }
+
+    nav a:hover {
+      color: var(--gold);
+    }
+
+    .nav-contact {
+      border: 1px solid var(--gold);
+      padding: 9px 15px;
+      border-radius: 4px;
+    }
+
+    /* Hero */
+
+    .hero {
+      background:
+        linear-gradient(90deg,
+          rgba(9, 29, 21, 0.94) 0%,
+          rgba(9, 29, 21, 0.80) 47%,
+          rgba(9, 29, 21, 0.28) 100%),
+        url("images/shop-outside.jpg") center 55% / cover no-repeat;
+      color: var(--white);
+      min-height: 570px;
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+    .hero-content {
+      max-width: 670px;
+      padding: 85px 0;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 6.2vw, 68px);
+      line-height: 1.08;
+      letter-spacing: -1.8px;
+      margin-bottom: 22px;
+    }
+
+    .hero h1 span {
+      color: var(--gold);
+    }
+
+    .hero p {
+      max-width: 540px;
+      color: #e1e6df;
+      font-size: 17px;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 13px 20px;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: 700;
+      transition: transform 0.2s, background 0.2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-gold {
+      background: var(--gold);
+      color: var(--green);
+    }
+
+    .btn-outline {
+      border: 1px solid rgba(255, 255, 255, 0.65);
+      color: var(--white);
+    }
+
+    /* Small highlights */
+
+    .highlights {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .highlight-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .highlight {
+      padding: 25px 12px;
+      text-align: center;
+      border-right: 1px solid var(--border);
+    }
+
+    .highlight:last-child {
+      border-right: none;
+    }
+
+    .highlight strong {
+      display: block;
+      color: var(--green);
+      font-size: 14px;
+      margin-bottom: 3px;
+    }
+
+    .highlight span {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    /* General sections */
+
+    section {
+      padding: 82px 0;
+    }
+
+    .section-heading {
+      max-width: 660px;
+      margin: 0 auto 38px;
+      text-align: center;
+    }
+
+    .section-heading .eyebrow {
+      margin-bottom: 10px;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(28px, 4vw, 42px);
+      line-height: 1.2;
+      color: var(--green);
+      margin-bottom: 13px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    /* Products */
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .product-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      overflow: hidden;
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(16, 41, 31, 0.09);
+    }
+
+    .product-image {
+      height: 225px;
+      background: #e9e7df;
+      overflow: hidden;
+    }
+
+    .product-image img {
+      transition: transform 0.4s;
+    }
+
+    .product-card:hover .product-image img {
+      transform: scale(1.04);
+    }
+
+    .product-info {
+      padding: 21px;
+    }
+
+    .product-info h3 {
+      font-size: 19px;
+      color: var(--green);
+      margin-bottom: 7px;
+    }
+
+    .product-info p {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 15px;
+    }
+
+    .product-link {
+      display: inline-block;
+      color: #315d43;
+      font-weight: 700;
+      font-size: 13px;
+    }
+
+    .product-link:hover {
+      color: #987a3f;
+    }
+
+    /* BLDC feature */
+
+    .feature-section {
+      background: var(--green);
+      color: var(--white);
+    }
+
+    .feature-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 55px;
+      align-items: center;
+    }
+
+    .feature-copy .eyebrow {
+      margin-bottom: 12px;
+    }
+
+    .feature-copy h2 {
+      font-size: clamp(30px, 4.5vw, 46px);
+      line-height: 1.2;
+      margin-bottom: 18px;
+    }
+
+    .feature-copy h2 span {
+      color: var(--gold);
+    }
+
+    .feature-copy > p {
+      color: #d4ded5;
+      margin-bottom: 22px;
+      font-size: 15px;
+    }
+
+    .feature-list {
+      list-style: none;
+      display: grid;
+      gap: 13px;
+      margin-bottom: 27px;
+    }
+
+    .feature-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      color: #f0f2ec;
+      font-size: 14px;
+    }
+
+    .check {
+      color: var(--gold);
+      font-weight: bold;
+    }
+
+    .feature-image {
+      height: 430px;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid rgba(216, 184, 117, 0.4);
+    }
+
+    .feature-note {
+      font-size: 12px !important;
+      color: #bfcbbf !important;
+      margin-top: 16px;
+    }
+
+    /* About */
+
+    .about-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .about-image {
+      height: 400px;
+      overflow: hidden;
+      border-radius: 8px;
+      background: #e7e4db;
+    }
+
+    .about-copy .eyebrow {
+      margin-bottom: 10px;
+    }
+
+    .about-copy h2 {
+      color: var(--green);
+      font-size: clamp(29px, 4vw, 40px);
+      line-height: 1.2;
+      margin-bottom: 18px;
+    }
+
+    .about-copy p {
+      color: var(--muted);
+      margin-bottom: 17px;
+      font-size: 15px;
+    }
+
+    .about-points {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin: 22px 0;
+    }
+
+    .about-points span {
+      background: #e9ede5;
+      color: var(--green);
+      border-radius: 4px;
+      padding: 8px 11px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    /* More products */
+
+    .more-section {
+      background: #eeece4;
+      padding: 55px 0;
+    }
+
+    .more-card {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      align-items: center;
+      gap: 35px;
+      background: var(--white);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .more-image {
+      height: 290px;
+    }
+
+    .more-copy {
+      padding: 28px;
+    }
+
+    .more-copy h2 {
+      color: var(--green);
+      font-size: 29px;
+      line-height: 1.25;
+      margin-bottom: 12px;
+    }
+
+    .more-copy p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    /* Location and contact */
+
+    .contact-section {
+      background: var(--white);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .contact-card {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 30px;
+      background: var(--cream);
+    }
+
+    .contact-icon {
+      font-size: 27px;
+      margin-bottom: 12px;
+    }
+
+    .contact-card h3 {
+      color: var(--green);
+      font-size: 21px;
+      margin-bottom: 10px;
+    }
+
+    .contact-card p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .contact-card .btn {
+      margin-top: 2px;
+    }
+
+    .btn-green {
+      background: var(--green);
+      color: var(--white);
+    }
+
+    /* Footer */
+
+    footer {
+      background: #0a1d15;
+      color: #d5ddd5;
+      padding: 40px 0 22px;
+    }
+
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 25px;
+      padding-bottom: 28px;
+    }
+
+    .footer-brand {
+      color: var(--white);
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+
+    .footer-brand span {
+      color: var(--gold);
+    }
+
+    .footer-top p {
+      font-size: 13px;
+      color: #b9c6ba;
+      max-width: 410px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      font-size: 13px;
+    }
+
+    .footer-links a:hover {
+      color: var(--gold);
+    }
+
+    .copyright {
+      border-top: 1px solid rgba(255,255,255,0.12);
+      padding-top: 18px;
+      text-align: center;
+      font-size: 12px;
+      color: #9eafa0;
+    }
+
+    /* Floating WhatsApp */
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 200;
+      background: #20b95a;
+      color: white;
+      padding: 13px 17px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 13px;
+      box-shadow: 0 5px 22px rgba(0,0,0,0.22);
+    }
+
+    .whatsapp-float:hover {
+      background: #168d43;
+    }
+
+    /* Mobile */
+
+    @media (max-width: 800px) {
+      .navbar {
+        min-height: 70px;
+      }
+
+      nav {
+        gap: 13px;
+      }
+
+      nav a {
+        font-size: 12px;
+      }
+
+      .hero {
+        min-height: 520px;
+        background-position: 58% center;
+      }
+
+      .products-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+      }
+
+      .product-image {
+        height: 190px;
+      }
+
+      .feature-layout,
+      .about-layout {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .feature-image {
+        height: 350px;
+      }
+
+      .about-image {
+        height: 350px;
+      }
+
+      .more-card {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+
+      .more-image {
+        height: 280px;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .container {
+        width: 91%;
+      }
+
+      .brand {
+        font-size: 15px;
+        letter-spacing: 0.7px;
+      }
+
+      .brand span {
+        font-size: 9px;
+        letter-spacing: 2px;
+      }
+
+      nav {
+        gap: 11px;
+      }
+
+      nav a {
+        font-size: 11px;
+      }
+
+      nav .nav-contact {
+        display: none;
+      }
+
+      .hero {
+        min-height: 510px;
+        background-position: 55% center;
+      }
+
+      .hero-content {
+        padding: 65px 0;
+      }
+
+      .hero h1 {
+        font-size: 42px;
+        letter-spacing: -1px;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      .btn {
+        padding: 12px 15px;
+        font-size: 13px;
+      }
+
+      .highlight-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .highlight {
+        padding: 18px 8px;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .highlight:nth-child(2) {
+        border-right: none;
+      }
+
+      .highlight:nth-child(3),
+      .highlight:nth-child(4) {
+        border-bottom: none;
+      }
+
+      section {
+        padding: 60px 0;
+      }
+
+      .products-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+
+      .product-image {
+        height: 240px;
+      }
+
+      .product-info {
+        padding: 19px;
+      }
+
+      .feature-image,
+      .about-image {
+        height: 290px;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-card {
+        padding: 24px;
+      }
+
+      .footer-top {
+        flex-direction: column;
+      }
+
+      .whatsapp-float {
+        right: 13px;
+        bottom: 13px;
+        padding: 12px 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <div class="container navbar">
+      <a class="brand" href="#home">
+        DIV VED HOME SOLUTIONS
+        <span>HAVells GALAXY</span>
+      </a>
+
+      <nav aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="nav-contact">Visit Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <div class="eyebrow">Your Home. Your Solutions.</div>
+
+          <h1>
+            A Better Home<br>
+            Starts with <span>Better Choices.</span>
+          </h1>
+
+          <p>
+            Discover electrical essentials and modern home solutions
+            at Div Ved Home Solutions — Havells Galaxy, Vijaypur.
+          </p>
+
+          <div class="buttons">
+            <a class="btn btn-gold"
+               href="https://wa.me/919419111804?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20your%20products."
+               target="_blank" rel="noopener noreferrer">
+              WhatsApp Us ↗
+            </a>
+
+            <a class="btn btn-outline"
+               href="https://www.google.com/maps/search/?api=1&query=Div%20Ved%20Home%20Solutions%2C%20Vijaypur%2C%20Samba%2C%20Jammu%20and%20Kashmir%20184120"
+               target="_blank" rel="noopener noreferrer">
+              Find Our Shop ↗
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Highlights -->
+    <div class="highlights">
+      <div class="container highlight-grid">
+        <div class="highlight">
+          <strong>Havells Galaxy</strong>
+          <span>Your home-solution destination</span>
+        </div>
+
+        <div class="highlight">
+          <strong>Electrical Essentials</strong>
+          <span>Wires, switches and more</span>
+        </div>
+
+        <div class="highlight">
+          <strong>Modern Technology</strong>
+          <span>Explore BLDC fans and more</span>
+        </div>
+
+        <div class="highlight">
+          <strong>Local Convenience</strong>
+          <span>Located in Vijaypur</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Products -->
+    <section id="products">
+      <div class="container">
+
+        <div class="section-heading">
+          <div class="eyebrow">Explore Our Range</div>
+          <h2>Solutions for Every Corner of Your Home</h2>
+          <p>
+            From essential electrical products to contemporary home
+            appliances, explore our range and ask us about availability.
+          </p>
+        </div>
+
+        <div class="products-grid">
+
+          <article class="product-card">
+            <div class="product-image">
+              <img src="images/switches.jpeg"
+                   alt="Switches and electrical accessories"
+                   loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3>Switches & Accessories</h3>
+              <p>Explore switches, sockets and electrical accessories for your home.</p>
+              <a class="product-link"
+                 href="https://wa.me/919419111804?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20switches%20and%20electrical%20accessories."
+                 target="_blank" rel="noopener noreferrer">
+                Enquire on WhatsApp ↗
+              </a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image">
+              <img src="images/water-heaters.jpg"
+                   alt="Water heaters"
+                   loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3>Water Heaters</h3>
+              <p>Explore water-heating solutions for everyday comfort.</p>
+              <a class="product-link"
+                 href="https://wa.me/919419111804?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20water%20heaters."
+                 target="_blank" rel="noopener noreferrer">
+                Enquire on WhatsApp ↗
+              </a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image">
+              <img src="images/chimney-hob.jpeg"
+                   alt="Kitchen chimney and hob"
+                   loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3>Kitchen Solutions</h3>
+              <p>Explore chimneys and hobs for a modern kitchen.</p>
+              <a class="product-link"
+                 href="https://wa.me/919419111804?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20kitchen%20chimneys%20and%20hobs."
+                 target="_blank" rel="noopener noreferrer">
+                Enquire on WhatsApp ↗
+              </a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image">
+              <img src="images/home-appliances.jpg"
+                   alt="Home appliances"
+                   loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3>Home Appliances</h3>
+              <p>Discover appliances designed to make daily routines easier.</p>
+              <a class="product-link"
+                 href="https://wa.me/919419111804?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20home%20appliances."
+                 target="_blank" rel="noopener noreferrer">
+                Enquire on WhatsApp ↗
+              </a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image">
+              <img src="images/fans-ac.jpg"
+                   alt="Fans and air conditioning solutions"
+                   loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3>Fans & Air Conditioning</h3>
+              <p>Explore cooling solutions, including BLDC fan options.</p>
+              <a class="product-link"
+                 href="https://wa.me/919419111804?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20fans%2C%20BLDC%20fans%20and%20air%20conditioning."
+                 target="_blank" rel="noopener noreferrer">
+                Enquire on WhatsApp ↗
+              </a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image">
+              <img src="images/lights.jpeg"
+                   alt="Home lighting"
+                   loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3>Lighting Solutions</h3>
+              <p>Explore lighting options for different rooms and spaces.</p>
+              <a class="product-link"
+                 href="https://wa.me/919419111804?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20lighting%20products."
+                 target="_blank" rel="noopener noreferrer">
+                Enquire on WhatsApp ↗
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- BLDC and technology -->
+    <section class="feature-section" id="technology">
+      <div class="container feature-layout">
+
+        <div class="feature-copy">
+          <div class="eyebrow">Smarter Home Choices</div>
+
+          <h2>
+            Modern Comfort.<br>
+            <span>Thoughtful Technology.</span>
+          </h2>
+
+          <p>
+            Explore Havells technologies and product features that can
+            help make everyday living more comfortable and convenient.
+          </p>
+
+          <ul class="feature-list">
+            <li>
+              <span class="check">✓</span>
+              <span><strong>BLDC fans:</strong> Many models are designed for lower electricity consumption than conventional fans.</span>
+            </li>
+            <li>
+              <span class="check">✓</span>
+              <span><strong>LED lighting:</strong> Explore energy-efficient lighting options for your home.</span>
+            </li>
+            <li>
+              <span class="check">✓</span>
+              <span><strong>Modern controls:</strong> Selected products offer remote control, smart features or convenient operation.</span>
+            </li>
+            <li>
+              <span class="check">✓</span>
+              <span><strong>Home comfort:</strong> Explore fans, water heaters, kitchen solutions and other electrical products.</span>
+            </li>
+          </ul>
+
+          <a class="btn btn-gold"
+             href="https://wa.me/919419111804?text=Hello%2C%20please%20tell%20me%20about%20Havells%20BLDC%20fans%20and%20modern%20home%20solutions."
+             target="_blank" rel="noopener noreferrer">
+            Ask About Features ↗
+          </a>
+
+          <p class="feature-note">
+            Features and energy savings vary by product and model.
+            Contact us to enquire about specific products and availability.
+          </p>
+        </div>
+
+        <div class="feature-image">
+          <img src="images/fans-ac.jpg"
+               alt="Fans and cooling solutions"
+               loading="lazy">
+        </div>
+
+      </div>
+    </section>
+
+    <!-- About the shop -->
+    <section id="about">
+      <div class="container about-layout">
+
+        <div class="about-image">
+          <img src="images/main-counter.jpeg"
+               alt="Inside Div Ved Home Solutions"
+               loading="lazy">
+        </div>
+
+        <div class="about-copy">
+          <div class="eyebrow">Welcome to Our Store</div>
+
+          <h2>Your Local Destination for Home Solutions</h2>
+
+          <p>
+            At Div Ved Home Solutions — Havells Galaxy, we bring together
+            electrical essentials and modern home-solution categories
+            for customers in Vijaypur and nearby areas.
+          </p>
+
+          <p>
+            Whether you are planning a home upgrade, exploring lighting,
+            looking for wires and switches, or comparing fans and
+            appliances, get in touch with us to discuss your requirements.
+          </p>
+
+          <div class="about-points">
+            <span>Wires & Cables</span>
+            <span>Switches</span>
+            <span>BLDC Fans</span>
+            <span>Lighting</span>
+            <span>Home Appliances</span>
+          </div>
+
+          <a class="btn btn-green"
+             href="https://www.google.com/maps/search/?api=1&query=Div%20Ved%20Home%20Solutions%2C%20Vijaypur%2C%20Samba%2C%20Jammu%20and%20Kashmir%20184120"
+             target="_blank" rel="noopener noreferrer">
+            Get Directions ↗
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Wires and additional categories -->
+    <section class="more-section">
+      <div class="container">
+
+        <div class="more-card">
+          <div class="more-image">
+            <img src="images/and-more.jpeg"
+                 alt="Additional products and electrical essentials"
+                 loading="lazy">
+          </div>
+
+          <div class="more-copy">
+            <div class="eyebrow">And Much More</div>
+
+            <h2>From Wires to Everyday Essentials</h2>
+
+            <p>
+              Looking for electrical wires and cables, accessories,
+              lighting or another home-solution product? Tell us what
+              you need, and contact the shop to enquire about the
+              available options.
+            </p>
+
+            <a class="btn btn-green"
+               href="https://wa.me/919419111804?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20wires%2C%20cables%20and%20other%20electrical%20products."
+               target="_blank" rel="noopener noreferrer">
+              Enquire About Products ↗
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+
+        <div class="section-heading">
+          <div class="eyebrow">Come Say Hello</div>
+          <h2>Visit Us in Vijaypur</h2>
+          <p>
+            Have a question about a product? Contact us or get directions
+            to our shop.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+
+          <div class="contact-card">
+            <div class="contact-icon">📍</div>
+            <h3>Find Our Store</h3>
+            <p>
+              Div Ved Home Solutions — Havells Galaxy<br>
+              Vijaypur, Samba<br>
+              Jammu & Kashmir — 184120
+            </p>
+
+            <a class="btn btn-green"
+               href="https://www.google.com/maps/search/?api=1&query=Div%20Ved%20Home%20Solutions%2C%20Vijaypur%2C%20Samba%2C%20Jammu%20and%20Kashmir%20184120"
+               target="_blank" rel="noopener noreferrer">
+              Open Google Maps ↗
+            </a>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">💬</div>
+            <h3>Connect on WhatsApp</h3>
+            <p>
+              Ask about product categories, features and availability.
+              We look forward to hearing from you.
+            </p>
+
+            <a class="btn btn-green"
+               href="https://wa.me/919419111804?text=Hello%2C%20I%20found%20your%20website%20and%20would%20like%20to%20enquire%20about%20your%20products."
+               target="_blank" rel="noopener noreferrer">
+              Chat With Us ↗
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand">
+            DIV VED <span>HOME SOLUTIONS</span>
+          </div>
+          <p>
+            Havells Galaxy · Vijaypur, Samba, Jammu & Kashmir 184120
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#products">Products</a>
+          <a href="#technology">Technology</a>
+          <a href="#about">About Us</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <div class="copyright">
+        © <span id="year"></span> Div Ved Home Solutions. All rights reserved.
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp button -->
+  <a class="whatsapp-float"
+     href="https://wa.me/919419111804?text=Hello%2C%20I%20found%20your%20website."
+     target="_blank" rel="noopener noreferrer"
+     aria-label="Contact Div Ved Home Solutions on WhatsApp">
+    WhatsApp ↗
+  </a>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
+
